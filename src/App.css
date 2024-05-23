@@ -13,6 +13,7 @@
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-1c1b1b: #1c1b1b;
+  --color-fc353c00: #fc353c00;
 }
 .section-heading {
   font-size: 26px;
@@ -55,6 +56,9 @@ a {
 }
 .gap-30 {
   gap: 30px;
+}
+.gap-5 {
+  gap: 5px;
 }
 
 /* Header Part */
@@ -306,7 +310,7 @@ footer .input-group-text {
 .blog-content h5 {
   font-size: 18px;
   color: var(--color-1c1b1b);
-}
+}c
 .blog-content p.desc {
   font-size: 13px;
   line-height: 22px;
@@ -314,3 +318,18 @@ footer .input-group-text {
 }
 
 /* Blog ends here */
+
+/* Special product */
+
+.special-product-card {
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+
+}
+/* .special-product-card .badge {
+  background-color: var(--color-fc353c00) !important;
+} */
+
+
+/* SpecialProduct ends here */
