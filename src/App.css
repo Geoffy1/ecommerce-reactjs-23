@@ -372,8 +372,9 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   padding: 15px 15px 25px;
+  /* margin-bottom: 3px; */
 }
-.filter-card ul ,
+.filter-card ul,
 .filter-card .form-check-label {
   font-size: 13px;
   line-height: 30px;
@@ -388,14 +389,15 @@ footer .input-group-text {
   color: var(--color-1c1b1b);
   margin-bottom: 20px;
 }
-.filter-card .form-check-input:checked {
-  background-color: var(--color-febd69);
-  border-color: var(--color-febd69);
-}
 .filter-card .form-check-input:focus {
   box-shadow: none;
   border-color: rgba(0, 0, 0, 0.25);
 }
+.filter-card .form-check-input:checked{
+  background-color: var(--color-febd69);
+  border-color: var(--color-febd69);
+}
+
 .sub-title {
   font-size: 14px;
   font-weight: 600;
