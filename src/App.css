@@ -14,6 +14,7 @@
   --color-777777: #777777;
   --color-1c1b1b: #1c1b1b;
   --color-fc353c00: #fc353c00;
+  --color-f2f2f2: #f2f2f2;
 }
 .section-heading {
   font-size: 26px;
@@ -241,6 +242,12 @@ footer .input-group-text {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
+}
+.product-card p.description{
+  font-size: 13px;
+  color: var(--color-777777);
+  margin-right: 20px;
 }
 .product-card .product-image {
   height: 270px;
@@ -434,6 +441,40 @@ footer .input-group-text {
   height: 34px;
   padding: 8px;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: var(--color-f2f2f2);
+  cursor: pointer;
 }
+.gr-12 {
+  width: 100%;
+}
+.gr-6{
+  width: 48%;
+}
+.gr-4{
+  width: 32%;
+}
+.gr-3{
+  width: 24%;
+}
+.gr-12 .product-card{
+  display: flex;
+  gap: 20px;
+}
+.gr-4 .product-image {
+  width: 100%;
+}
+gr-6 .product-image img{
+  margin: auto;
+  display: block;
+}
+.gr-12 .product-card .product-image {
+  width: 270px;
+}
+.gr-12 .product-card .product-image{
+  height: auto;
+}
+.gr-12 .action-bar{
+  top: 17%;
+}
+
 /* Our Store ends here */
