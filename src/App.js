@@ -6,7 +6,10 @@ import Home from './pages/Home';
 import Layout from './components/Layout';
 import About from './pages/About';
 import OurStore from './pages/OurStore';
+import  CompareProduct from './pages/CompareProduct';
 import Blog from './pages/Blog';
+import Wishlist from './pages/Wishlist';
+
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="store" element={<OurStore />} />
           <Route path="blogs" element={<Blog />} />
+          <Route path="compare-product" element={<CompareProduct />} />
+          <Route path="Wishlist" element={<Wishlist />} />
+          
         </Route>
 
        </Routes>
