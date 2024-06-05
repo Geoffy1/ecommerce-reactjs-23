@@ -5,9 +5,12 @@ import {Link} from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from 'react-image-zoom';
+import watch from '../'
+import Color from '../components/Color';
 
 
 const SingleProduct = () => {
+  const props = {width: 400, height: 500, zoomWidth: 500, img: "https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"};
   const [orderedProduct, setorderedProduct] = useState(true);
   return (
     <>
@@ -17,9 +20,92 @@ const SingleProduct = () => {
         <div className="container-xxl">
             <div className="row">
                 <div className="col-6">
-                  <div className='main-product-image'></div>
+                  <div className='main-product-image'>
+                    <div>
+                    <ReactImageZoom {...props} />
+                    </div>
                   </div>
-                <div className="col-6"></div>
+                  <div className="other-products-images flex-wrap d-flex gap-15">
+                    <div>
+                      <img   alt=''   className='img-fluid' src='https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D'/>
+                    </div>
+                    <div>
+                      <img  alt=''  className='img-fluid' src='https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D'/>
+                    </div>
+                    <div>
+                      <img alt=''  className='img-fluid'  src='https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D'/>
+                    </div>
+                    <div>
+                      <img alt=''  className='img-fluid'  src='https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D'/>
+                    </div>
+                  </div>
+                  </div>
+                <div className="col-6">
+                  <div className='main-product-details'>
+                    <div className='border-bottom'>
+                      <h3 className="title">
+                        Chique headphones Bulk sale Customizes available
+                      </h3>
+                    </div>
+                    <div className="border-bottom py-3">
+                      <p className="price">$ 100</p>
+                      <div className="d-flex align-items-center gap-10">
+                    
+                  <ReactStars
+    count={5}
+    size={24}
+    edit={false}
+    value='3'
+    activeColor="#ffd700"
+  />
+  <p className='mb-0'>(2 reviews)</p>
+                  </div>
+                  <a href="#review">Write a review</a>
+
+                    </div>
+                    <div className="border-bottom py-3">
+                      <div className="d-flex gap-10 align-items-center ">
+                        <h3 className='product-heading' >Type :</h3>
+                        <p className='product-data' >Watch</p>
+                      </div>
+                      <div className="d-flex gap-10 align-items-center ">
+                        <h3 className='product-heading' >Brand :</h3>
+                        <p className='product-data' >gfd</p>
+                      </div>
+                      <div className="d-flex gap-10 align-items-center ">
+                        <h3 className='product-heading' >Categories :</h3>
+                        <p className='product-data' >gfd</p>
+                      </div>
+                      <div className="d-flex gap-10 align-items-center ">
+                        <h3 className='product-heading' >Tags :</h3>
+                        <p className='product-data' >gfd</p>
+                      </div>
+                      <div className="d-flex gap-10 align-items-center ">
+                        <h3 className='product-heading' >Availabilty :</h3>
+                        <p className='product-data' >gfd</p>
+                      </div>
+                      <div className="d-flex gap-10 flex-column mb-3 mt-2 ">
+                        <h3 className='product-heading' >Quantity :</h3>
+                        <p className='product-data' >In stock</p>
+                      </div>
+                      
+                      <div className="d-flex gap-10 flex-column mb-3 mt-2 ">
+                        <h3 className='product-heading' >Size :</h3>
+                        <div className="d-flex flex-wrap gap-15">
+                          <span className="badge border-1 border bg-white text-dark border-secondary">S</span>
+                          <span className="badge border-1 border bg-white text-dark border-secondary">M</span>
+                          <span className="badge border-1 border bg-white text-dark border-secondary">XL</span>
+                          <span className="badge border-1 border bg-white text-dark border-secondary">XXL</span>
+                        </div>
+                      </div>
+                      <div className="d-flex gap-10 flex-column mb-3 mt-2 border">
+                        <h3 className='product-heading' >Color :</h3>
+                        <Color />
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
 
@@ -44,11 +130,11 @@ const SingleProduct = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <h3>Reviews</h3>
+              <h3 id='review' >Reviews</h3>
              <div className='review-inner-wrapper'>
              <div className="review-head d-flex justify-content-between align-items-end ">
                 <div>
-                  <h4 className="mb-2">Customer Reviews</h4>
+                  <h4  className="mb-2">Customer Reviews</h4>
                   <div className="d-flex align-items-center gap-10">
                     
                   <ReactStars
