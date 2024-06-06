@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ReactStars from "react-rating-stars-component";
+import prodcompare from '../images/prodcompare.svg'
 
 const ProductCard = (props) => {
   const {grid} = props;
@@ -12,7 +13,7 @@ const ProductCard = (props) => {
       <Link to=':id' className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist" />
+              <img src="images/wishlist.svg" alt="wishlist" />
             </Link>
         </div>
         <div className="product-image">

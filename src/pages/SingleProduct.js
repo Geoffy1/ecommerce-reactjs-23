@@ -7,11 +7,23 @@ import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from 'react-image-zoom';
 import watch from '../'
 import Color from '../components/Color';
+import { GoGitCompare } from "react-icons/go";
+import { CiHeart } from "react-icons/ci";
 
 
 const SingleProduct = () => {
-  const props = {width: 400, height: 500, zoomWidth: 500, img: "https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"};
+
+  const props = {width: 400, height: 600, zoomWidth: 600, img: "https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"};
   const [orderedProduct, setorderedProduct] = useState(true);
+  const copyToClipboard = (text) => {
+    console.log('text', text)
+    var textField = document.createElement('textarea')
+    textField.innerText = text
+    document.body.appendChild(textField)
+    textField.select()
+    document.execCommand('copy')
+    textField.remove()
+  }
   return (
     <>
       <Meta title={"Product Name"} />
@@ -25,7 +37,7 @@ const SingleProduct = () => {
                     <ReactImageZoom {...props} />
                     </div>
                   </div>
-                  <div className="other-products-images flex-wrap d-flex gap-15">
+                  <div className="other-products-images  d-flex gap-15">
                     <div>
                       <img   alt=''   className='img-fluid' src='https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D'/>
                     </div>
@@ -63,7 +75,7 @@ const SingleProduct = () => {
                   <a href="#review">Write a review</a>
 
                     </div>
-                    <div className="border-bottom py-3">
+                    <div className=" py-3">
                       <div className="d-flex gap-10 align-items-center ">
                         <h3 className='product-heading' >Type :</h3>
                         <p className='product-data' >Watch</p>
@@ -84,10 +96,7 @@ const SingleProduct = () => {
                         <h3 className='product-heading' >Availabilty :</h3>
                         <p className='product-data' >gfd</p>
                       </div>
-                      <div className="d-flex gap-10 flex-column mb-3 mt-2 ">
-                        <h3 className='product-heading' >Quantity :</h3>
-                        <p className='product-data' >In stock</p>
-                      </div>
+                      
                       
                       <div className="d-flex gap-10 flex-column mb-3 mt-2 ">
                         <h3 className='product-heading' >Size :</h3>
@@ -101,6 +110,35 @@ const SingleProduct = () => {
                       <div className="d-flex gap-10 flex-column mb-3 mt-2 border">
                         <h3 className='product-heading' >Color :</h3>
                         <Color />
+                      </div>
+                      <div className="d-flex gap-15 align-items-center flex-row mb-3 mt-2 ">
+                        <h3 className='product-heading' >Quantity :</h3>
+                        <p className='product-data' >In stock</p>
+                        <div>
+                          <input className='form-control' type="number" name='' style={{width: '50px'}} main={1} max={10} id='' />
+                        </div>
+                        <div className="d-flex justify-content-center align-items-center gap-30 ms-5">
+                                    <button className="button"type='submit'>Buy Now</button>
+                                    <button to="/signup" className="button signup">Add to cart</button>
+                                </div>
+                      </div>
+                      <div className='d-flex align-items-center gap-15' >
+                        <div>
+                          <a href=""> <GoGitCompare className='fs-5 me-2' /> Add to Compare</a>
+                        </div>
+                        <div>
+                          <a href=""> <CiHeart className='fs-5 me-2' /> Add to wishlist</a>
+                        </div>
+                      </div>
+                      <div className="d-flex gap-10 flex-column my-3 ">
+                        <h3 className='product-heading' >Shipping & Returns :</h3>
+                        <p className='product-data' >free shipping in East africa</p>
+                      </div>
+                      <div className="d-flex gap-10 align-items-center my-3 ">
+                        <h3 className='product-heading' >Product Link :</h3>
+                        <a href='javascript:void(0);' onClick={()=> {
+                          copyToClipboard('https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3Jpc3R3YXRjaHxlbnwwfHwwfHx8MA%3D%3D');
+                          }}>Copy Product Link</a>
                       </div>
                       
                     </div>
