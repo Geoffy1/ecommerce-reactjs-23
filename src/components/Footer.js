@@ -38,13 +38,13 @@ const Footer = () => {
                 <a href="tel:+254716174485" className="mt-3 d-block mb-2 text-white">+254716174485</a>
                 <a href="mailto:seemewe1994@gmail.com" className="mt-2 d-block mb-2 text-white">seemewe1994@gmail.com</a>
                 <div className="social-icons d-flex align-items-center gap-30">
-                  <a className='text-white' href=""><BsWhatsapp /></a>
-                  <a  className='text-white' href=""><BsTwitterX /></a>
-                  <a className='text-white' href=""><BsFacebook /></a>
-                  <a className='text-white' href=""><BsLinkedin /></a>
-                  <a className='text-white'  href=""><BsYoutube /></a>
-                  <a className='text-white'  href=""><BsGithub /></a>
-                  <a className='text-white'  href=""><BsInstagram /></a>
+                  <a className='text-white' href="https://wa.me/254716174485"><BsWhatsapp /></a>
+                  <a  className='text-white' href="https://x.com/GeofreyGeojogu"><BsTwitterX /></a>
+                  <a className='text-white' href="https://www.facebook.com/Madatraz"><BsFacebook /></a>
+                  <a className='text-white' href="https://www.linkedin.com/in/geofrey-njogu-6434102b5/"><BsLinkedin /></a>
+                  <a className='text-white'  href="https://www.youtube.com/channel/UCfZkYBB4SRx60zlzdJ7OoJg"><BsYoutube /></a>
+                  <a className='text-white'  href="https://www.github.com/Geoffy1"><BsGithub /></a>
+                  <a className='text-white'  href="https://www.instagram.com/adzerserek/"><BsInstagram /></a>
                 </div>
               </div>
             </div>
