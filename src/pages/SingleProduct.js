@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from 'react-image-zoom';
-import watch from '../'
 import Color from '../components/Color';
 import { GoGitCompare } from "react-icons/go";
 import { CiHeart } from "react-icons/ci";
