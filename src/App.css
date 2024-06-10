@@ -729,6 +729,10 @@ gr-6 .product-image img{
 .cart-col-1{
   width: 40%;
 }
+.cart-col-1 p{
+  font-size: 14px;
+  color: var(--color-777777);
+}
 .cart-col-2{
   width: 10%;
 }
@@ -737,5 +741,9 @@ gr-6 .product-image img{
 }
 .cart-col-4{
   width: 15%;
+}
+.cart-data h5.price {
+  color: var(--color-1c1b1b);
+  font-size: 14px;
 }
 /*cart ends*/

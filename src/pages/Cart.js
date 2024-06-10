@@ -26,9 +26,9 @@ const Cart = () => {
                                 <img src={watch} alt="product image" />
                             </div>
                             <div className="w-75">
-                                <h5 className="title">title</h5>
-                                <p className="size">S</p>
-                                <p className="color">#A5</p>
+                                <p>title</p>
+                                <p>S</p>
+                                <p>#A5</p>
                             </div>
                         </div>
                         <div className="cart-col-2">
@@ -52,9 +52,9 @@ const Cart = () => {
                                 <img src={watch} alt="product image" />
                             </div>
                             <div className="w-75">
-                                <h5 className="title">title</h5>
-                                <p className="size">S</p>
-                                <p className="color">#A5</p>
+                                <p>title</p>
+                                <p>S</p>
+                                <p>#A5</p>
                             </div>
                         </div>
                         <div className="cart-col-2">
@@ -71,6 +71,16 @@ const Cart = () => {
                         <div className="cart-col-4">
                             <h5 className="price">$ 100</h5>
                         </div>
+                    </div>
+                </div>
+                <div className="col-12 py-2">
+                    <div className="d-flex justify-content-between align-items-baseline">
+                        <Link to='/product' className='button'>Continue to shopping</Link>
+                    </div>
+                    <div className="d-flex flex-column align-items-end">
+                         <h4>Subtotal: $1000</h4>
+                        <p>Taxes and shipping costs</p>
+                        <Link to='/checkout' className='button'>Checkout</Link>
                     </div>
                 </div>
             </div>
