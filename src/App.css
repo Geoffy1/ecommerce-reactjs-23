@@ -723,7 +723,7 @@ gr-6 .product-image img{
   font-size: 13px;
   color: var(--color-777777);
 }
-.cart-header{
+.cart-header, .cart-data{
   border-bottom: 1px solid #eaeaea;
 }
 .cart-col-1{
