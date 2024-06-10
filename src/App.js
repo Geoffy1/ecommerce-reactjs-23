@@ -19,6 +19,7 @@ import ShippingPolicy from './pages/ShippingPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SingleProduct from './pages/SingleProduct';
+import Cart from './pages/Cart';
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="product" element={<OurStore />} />
           <Route path="blogs" element={<Blog />} />
+          <Route path="cart" element={<Cart />} />
           <Route path="compare-product" element={<CompareProduct />} />
           <Route path="Wishlist" element={<Wishlist />} />
           <Route path="login" element={<Login />} />
