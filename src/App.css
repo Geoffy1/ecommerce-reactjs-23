@@ -718,3 +718,24 @@ gr-6 .product-image img{
   color: var(--color-777777);
 }
 /* main product page ends */
+/* cart page */
+.cart-header h4{
+  font-size: 13px;
+  color: var(--color-777777);
+}
+.cart-header{
+  border-bottom: 1px solid #eaeaea;
+}
+.cart-col-1{
+  width: 40%;
+}
+.cart-col-2{
+  width: 10%;
+}
+.cart-col-3{
+  width: 15%;
+}
+.cart-col-4{
+  width: 15%;
+}
+/*cart ends*/
