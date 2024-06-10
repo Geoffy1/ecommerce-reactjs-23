@@ -3,6 +3,7 @@ import BreadCrumb from '../components/BreadCrumb'
 import { Link } from 'react-router-dom';
 import React from 'react';
 import watch from '../images/watch.jpg'
+import { RiDeleteBinFill } from "react-icons/ri";
 
 const Cart = () => {
   return (
@@ -30,10 +31,20 @@ const Cart = () => {
                                 <p className="color">#A5</p>
                             </div>
                         </div>
-                        <div className="cart-col-1"></div>
-                        <div className="cart-col-2"></div>
-                        <div className="cart-col-3"></div>
-                        <div className="cart-col-4"></div>
+                        <div className="cart-col-2">
+                            <h5 className="price">$ 100</h5>
+                        </div>
+                        <div className="cart-col-3 d-flex align-items-center gap-15">
+                            <div>
+                                <input className='form-control' type="number" id='' />
+                            </div>
+                            <div>
+                                <RiDeleteBinFill />
+                            </div>
+                        </div>
+                        <div className="cart-col-4">
+                            <h5 className="price">$ 100</h5>
+                        </div>
                     </div>
                 </div>
             </div>
