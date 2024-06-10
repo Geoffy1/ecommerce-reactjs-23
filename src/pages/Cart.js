@@ -20,7 +20,7 @@ const Cart = () => {
                         <h4 className="cart-col-3">Price</h4>
                         <h4 className="cart-col-4">Total</h4>
                     </div>
-                    <div className="cart-data d-flex justify-content-between align-items-center">
+                    <div className="cart-data py-3 mb-2 d-flex justify-content-between align-items-center">
                         <div className="cart-col-1 d-flex align-items-center">
                             <div className="w-25">
                                 <img src={watch} alt="product image" />
@@ -36,10 +36,36 @@ const Cart = () => {
                         </div>
                         <div className="cart-col-3 d-flex align-items-center gap-15">
                             <div>
-                                <input className='form-control' type="number" id='' />
+                                <input className='form-control' min={1} max={140} type="number" id='' />
                             </div>
                             <div>
-                                <RiDeleteBinFill />
+                                <RiDeleteBinFill className='text-danger' />
+                            </div>
+                        </div>
+                        <div className="cart-col-4">
+                            <h5 className="price">$ 100</h5>
+                        </div>
+                    </div>
+                    <div className="cart-data py-3 mb-2 d-flex justify-content-between align-items-center">
+                        <div className="cart-col-1 d-flex align-items-center">
+                            <div className="w-25">
+                                <img src={watch} alt="product image" />
+                            </div>
+                            <div className="w-75">
+                                <h5 className="title">title</h5>
+                                <p className="size">S</p>
+                                <p className="color">#A5</p>
+                            </div>
+                        </div>
+                        <div className="cart-col-2">
+                            <h5 className="price">$ 100</h5>
+                        </div>
+                        <div className="cart-col-3 d-flex align-items-center gap-15">
+                            <div>
+                                <input className='form-control' min={1} max={140} type="number" id='' />
+                            </div>
+                            <div>
+                                <RiDeleteBinFill className='text-danger' />
                             </div>
                         </div>
                         <div className="cart-col-4">
