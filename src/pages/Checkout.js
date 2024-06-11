@@ -9,7 +9,7 @@ const Checkout = () => {
     <>
       <Meta title={"Login"} />
       <BreadCrumb title='Login' />
-      <div className="checkout-wrapper">
+      <div className="checkout-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
             <div className="row">
                 <div className="col-7">
@@ -18,6 +18,7 @@ const Checkout = () => {
                             <nav style={{"--bs-breadcrumb-divider": ">" }} aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
+    &nbsp; /
     <li class="breadcrumb-item active" aria-current="page">Library</li>
   </ol>
 </nav>
