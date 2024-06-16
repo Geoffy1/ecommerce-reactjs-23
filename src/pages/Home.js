@@ -85,7 +85,7 @@ const Home = () => {
       
     </Container>
        
-      <section clas sName="home-wrapper-2 py-5">
+      {/* <section clas sName="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -129,7 +129,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
