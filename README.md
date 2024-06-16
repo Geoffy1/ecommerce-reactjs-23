@@ -46,3 +46,21 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 "# ecommerce-reactjs-23" 
 lauch depoy with netlify
+<!-- production script -->
+## frontend tchnology
+redux toolkit
+react-icons
+react-router-dom
+bootsrap5 
+## step 1
+npx create-react-app ecommerce-app --template redux
+## step 2
+cd ecommerce-app
+code .
+# step 3
+npm i react-icons
+npm i react-router-dom
+# step4
+npm start
+# step 5
+set up layout
